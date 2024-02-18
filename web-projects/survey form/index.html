@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">help us improve with your opinion</p>
+    <form id="survey-form">
+      <fieldset id="text-info">
+      <label id="name-label" for="name">Name <input placeholder="Enter your name" required id="name" type="text"></label>
+      <label id="email-label" for="email">Email <input  required placeholder="Enter your email" id="email" type="email"></label>
+      <label id="number-label" for="number">Age <input placeholder="Enter your Age" required id="number" type="number" min="13" max="120"></label>
+    </fieldset>
+    <fieldset id="referrer">
+      <label for="">How did you hear about us? <select id="dropdown">
+        <option value="">Select one</option>
+        <option  value="1">Youtube</option>
+        <option value="2">Blog post</option>
+        <option value="3">Radio</option>
+        <option value="4">Other</option>
+      </select>
+    </label>
+      </fieldset>
+      <fieldset>
+      <label>Would you recommend our service to others?<br><br>
+      <input name="recommendation" value="yes" checked type="radio"> Yes <br>
+      <input name="recommendation" value="no" type="radio"> No <br>
+      <input name="recommendation" value="not-sure" type="radio"> Not sure <br><br></label> 
+
+      <label>Our website/services helped you with: <br><br>
+      <input value="1" type="checkbox"> Learning new skills<br>
+      <input value="2" type="checkbox"> Make new connections<br>
+      <input value="3" type="checkbox"> Getting a new job<br><br>
+    </label>
+    <label>Additional Notes?
+      <textarea placeholder="Enter your comment here.." rows="6" cols="30"></textarea></label>
+    </fieldset>
+      <input type="submit" value="submit" id="submit">
+    </form>
+    <img class="ciccle" src="circle-heat-svgrepo-com.svg" alt="">
+  </main>
+  </body>
+<html>
